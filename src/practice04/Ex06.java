@@ -15,8 +15,10 @@ public class Ex06 {
 		}
 
 		for (int b = 0; b < c.length; b++) {
-
-			//	뭐지...
+			
+			if (c[b] == ' ') {
+				c[b] = ',';
+			}
 		
 			System.out.print(c[b]);
 		

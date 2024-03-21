@@ -25,15 +25,24 @@ public class Ex07 {
 		int a = scanner.nextInt();
 		
 		int c = 0;
+		
 		for (int b = 0; b < wonArray.length; b++) {
+
 			c = 0;
-			if (wonArray[b] < a) {
-				for( ; wonArray[b] < a; ) {
-					c += 1;	
+			
+			if (a >= wonArray[b]) {
+				
+				for ( ;a >= wonArray[b]; ) {
+				
+					c += 1;
+					a = a - wonArray[b];
+					
 				}
 				
+				System.out.println(wonArray[b] + "원: " + c + "개");
 			}
-			System.out.println(wonArray[b] + "원: " + c);
+			
+			scanner.close();
 		}
 		
 	}
